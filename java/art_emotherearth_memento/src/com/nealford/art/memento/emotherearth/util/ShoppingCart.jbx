@@ -1,0 +1,9 @@
+[PropertyInfo]
+cartTotal,double,false,false, , ,true,<default>
+itemList,java.util.List,false,false, , ,false,<default>
+totalAsCurrency,String,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

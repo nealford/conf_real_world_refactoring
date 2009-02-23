@@ -1,0 +1,14 @@
+[PropertyInfo]
+ccExp,String,false,false, , ,false,<default>
+ccNum,String,false,false, , ,false,<default>
+ccType,String,false,false, , ,false,<default>
+dbPool,com.nealford.art.emotherearth.util.DBPool,false,false, , ,false,<default>
+orderKey,int,false,false, , ,false,<default>
+orderStatus,String,false,false, , ,false,<default>
+shippingStatus,String,false,false, , ,false,<default>
+userKey,int,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

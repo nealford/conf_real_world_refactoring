@@ -1,0 +1,143 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>End 2 End Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">End 2 End Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://localhost:8080/art_emotherearth_memento/welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>user</td>
+	<td>Homer</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@id='submitButton']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>glob:*art_emotherearth_memento/catalog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>CatalogView</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Catalog of Items</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//html/body/table/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//html/body/table/.1.1</td>
+	<td>Ocean</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>document.forms[1].quantity</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@id='submit2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>*art_emotherearth_memento/showcart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ShowCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Click here for more shopping</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>*, here is your cart:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Click here for more shopping</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>*/art_emotherearth_memento/catalog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>document.forms[3].quantity</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@id='submit4']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/input[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Do you * want to check out?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ccNum</td>
+	<td>444444444444</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ccType</td>
+	<td>label=Amex</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ccExp</td>
+	<td>12/10</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Check out']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>*, Thank you for shopping at eMotherEarth.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>regexp:Your confirmation number is \d?</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

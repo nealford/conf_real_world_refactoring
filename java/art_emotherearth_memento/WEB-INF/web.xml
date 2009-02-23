@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>eMotherEarth</display-name>
+
+  <context-param>
+    <param-name>dbUrl</param-name>
+    <param-value>jdbc:derby:/Users/jNf/temp/eMotherEarth</param-value>
+  </context-param>
+  <context-param>
+    <param-name>driverClass</param-name>
+    <param-value>org.apache.derby.jdbc.EmbeddedDriver</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>catalog</servlet-name>
+    <servlet-class>com.nealford.art.memento.emotherearth.controller.Catalog</servlet-class>
+    <init-param>
+      <param-name>recsPerPage</param-name>
+      <param-value>6</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>checkout</servlet-name>
+    <servlet-class>com.nealford.art.memento.emotherearth.controller.Checkout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showcart</servlet-name>
+    <servlet-class>com.nealford.art.memento.emotherearth.controller.ShowCart</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>welcome</servlet-name>
+    <servlet-class>com.nealford.art.memento.emotherearth.controller.Welcome</servlet-class>
+  </servlet>
+    <servlet>
+        <servlet-name>SeleniumResults</servlet-name>
+        <servlet-class>com.nealford.art.memento.emotherearth.test.SeleniumResults</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>catalog</servlet-name>
+    <url-pattern>/catalog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>checkout</servlet-name>
+    <url-pattern>/checkout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showcart</servlet-name>
+    <url-pattern>/showcart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeleniumResults</servlet-name>
+    <url-pattern>/postResults</url-pattern>
+ </servlet-mapping>
+    
+
+
+</web-app>

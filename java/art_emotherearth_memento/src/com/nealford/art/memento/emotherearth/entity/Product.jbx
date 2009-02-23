@@ -1,0 +1,10 @@
+[PropertyInfo]
+id,int,false,false,id,id,true,<default>
+name,String,false,false,name,name,true,<default>
+price,double,false,false,price,price,true,<default>
+priceAsCurrency,String,false,false,priceAsCurrency,priceAsCurrency,true,<default>
+[IconNames]
+
+
+
+

@@ -1,0 +1,8 @@
+[PropertyInfo]
+product,com.nealford.art.emotherearth.entity.Product,false,false,product,product,true,<default>
+quantity,int,false,false,quantity,quantity,true,<default>
+[IconNames]
+
+
+
+

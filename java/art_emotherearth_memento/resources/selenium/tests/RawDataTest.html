@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RawDataTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RawDataTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/art_emotherearth_memento/RawData.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>user_name</td>
+	<td>userName</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>ocean_quantity</td>
+	<td>oceanQuantity</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>cc_num</td>
+	<td>ccNum</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>cc_type</td>
+	<td>ccType</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>cc_exp_date</td>
+	<td>ccExpDate</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/art_emotherearth_memento/welcome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>WelcomeView</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>userName</td>
+	<td>Homer</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>CatalogView</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>qty1</td>
+	<td>${oceanQuantity}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ShowCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Show Checkout']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Do you really want to check out?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ccNum</td>
+	<td>${ccNum}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ccType</td>
+	<td>label=${ccType}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ccExp</td>
+	<td>${ccExpDate}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Check out']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>CheckOutView</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

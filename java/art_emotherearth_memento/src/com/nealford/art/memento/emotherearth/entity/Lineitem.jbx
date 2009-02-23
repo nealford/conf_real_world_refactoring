@@ -1,0 +1,10 @@
+[PropertyInfo]
+itemId,int,false,false, , ,false,<default>
+lineitemKey,int,false,false, , ,false,<default>
+orderKey,int,false,false, , ,false,<default>
+quantity,int,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

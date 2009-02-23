@@ -1,0 +1,9 @@
+[PropertyInfo]
+productList,java.util.Vector,false,false, , ,true,<default>
+recordsPerPage,int,false,false, , ,true,<default>
+dbPool,com.nealford.art.emotherearth.util.DBPool,false,false,dbPool,dbPool,true,<default>
+[IconNames]
+
+
+
+
